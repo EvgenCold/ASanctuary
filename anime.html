@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASanctuary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="a-style.css">
+    <style>
+        /* Основные стили */
+      
+    </style>
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Logo3.png" alt="" width="38" height="32" class="d-inline-block align-top">
+                ASanctuary
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Аниме</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Дорамы</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="darkDropdown" role="button" data-bs-toggle="dropdown">
+                            Каталог
+                        </a>
+                        <ul class="dropdown-menu bg-dark text-white border-0 shadow-lg" style="width: 420px;">
+                            <div class="container-fluid">
+                                <!-- Двухколоночная секция с разделителем -->
+                                <div class="row g-0">
+                                    <!-- Первая колонка -->
+                                    <div class="col-6 py-2">
+                                        <li><a class="dropdown-item text-white" href="#">Тайтлы</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Сейчас смотрят</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Коллекции</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Отзывы и рецензии</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Команды</a></li>
+                                    </div>
+                                    
+                                    <!-- Вертикальный разделитель -->
+                                    <div class="col-auto">
+                                        <div class="vr bg-secondary h-100 mx-1 opacity-50"></div>
+                                    </div>
+                                    
+                                    <!-- Вторая колонка -->
+                                    <div class="col-5 py-2">
+                                        <li><a class="dropdown-item text-white" href="#">Люди</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Персонажи</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Франшизы</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Издательства</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Пользователи</a></li>
+                                    </div>
+                                </div>
+                                
+                                <!-- Горизонтальный разделитель -->
+                                <li><hr class="dropdown-divider bg-secondary m-0 opacity-50"></li>
+                                
+                                <!-- Подменю и дополнительные элементы -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <li class="dropdown-submenu position-relative">
+                                            <a class="dropdown-item dropdown-toggle text-white d-flex justify-content-between align-items-center" href="#">
+                                                Типы контента
+                                                <span class="dropdown-toggle-arrow ms-2 text-white-50">›</span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end bg-dark border-light">
+                                                <li><a class="dropdown-item text-white" href="#">TV Сериал</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">Фильм</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">Короткометражка</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">Спешл</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">OVA</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">ONA</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">Клип</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="dropdown-submenu position-relative">
+                                            <a class="dropdown-item dropdown-toggle text-white d-flex justify-content-between align-items-center" href="#">
+                                                Жанры
+                                                <span class="dropdown-toggle-arrow ms-2 text-white-50">›</span>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end bg-dark border-light">
+                                                <li><a class="dropdown-item text-white" href="#">Боевик</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">Комедия</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">Драма</a></li>
+                                                <li><a class="dropdown-item text-white" href="#">Фэнтези</a></li>
+                                                <li><hr class="dropdown-divider bg-secondary m-0 opacity-50"></li>
+                                                <li><a class="dropdown-item text-warning" href="#">Все жанры</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li><hr class="dropdown-divider bg-secondary m-0 opacity-50"></li>
+                                        <li><a class="dropdown-item text-center text-warning fw-bold" href="#">Случайный тайтл</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Поиск аниме...">
+                    <button class="btn btn-outline-danger" type="submit">Найти</button>
+                    <button id="themeToggle" class="btn btn-sm btn-outline-secondary ms-3">🌙</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+          <!-- Основной контент: карточки аниме -->
+          <div class="col-lg-8">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+              <!-- Карточка аниме -->
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://m.media-amazon.com/images/M/MV5BZTI4ZGMxN2UtODlkYS00MTBjLWE1YzctYzc3NDViMGI0ZmJmXkEyXkFqcGc@._V1_.jpg"  style="height: 200px; overflow: hidden;" class="object-fit-cover card-img-top" alt="Название аниме">
+                  <div class="card-body">
+                    <h5 class="card-title">Sousou no Frieren</h5>
+                    <p class="card-text subtext ">Жанры: Фэнтези, Драма</p>
+                    <span class="badge bg-primary">Рейтинг: 8.9</span>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Повтор карточек с разными данными -->
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://m.media-amazon.com/images/M/MV5BNmI1MmYxNWQtY2E5NC00ZTlmLWIzZGEtNzM1YmE3NDA5NzhjXkEyXkFqcGc@._V1_.jpg" style="height: 200px; overflow: hidden;" class="object-fit-cover card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Jujutsu Kaisen 2</h5>
+                    <p class="card-text subtext">Жанры: Экшен, Демоны</p>
+                    <span class="badge bg-primary">Рейтинг: 8.5</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://i.pinimg.com/474x/45/59/cd/4559cd4f805aa341bad8fcd3f8fe3188.jpg" style="height: 200px; overflow: hidden;" class="object-fit-cover card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Shingeki no Kyojin: Final Season</h5>
+                    <p class="card-text subtext ">Жанры: Экшен, Драма</p>
+                    <span class="badge bg-primary">Рейтинг: 9.1</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202106/1704/2ZfAUG5CTXdM34S1OhmMW1zF.jpg" style="height: 200px; overflow: hidden;" class="object-fit-cover card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Kimetsu no Yaiba</h5>
+                    <p class="card-text subtext">Жанры: Экшен, Демоны</p>
+                    <span class="badge bg-primary">Рейтинг: 8.7</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://m.media-amazon.com/images/I/71QJjQRuEWL.jpg" style="height: 200px; overflow: hidden;" class="object-fit-cover card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Spy x Family</h5>
+                    <p class="card-text subtext">Жанры: Комедия, Экшен</p>
+                    <span class="badge bg-primary">Рейтинг: 8.3</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://poster4.me/wp-content/uploads/2020/01/tvoeimya_2.jpg" style="height: 200px; overflow: hidden;" class="object-fit-cover card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Your Name</h5>
+                    <p class="card-text subtext">Жанры: Романтика, Драма</p>
+                    <span class="badge bg-primary">Рейтинг: 9.2</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://m.media-amazon.com/images/M/MV5BYzYxOTlkYzctNGY2MC00MjNjLWIxOWMtY2QwYjcxZWIwMmEwXkEyXkFqcGc@._V1_.jpg" style="height: 200px; overflow: hidden;" class="object-fit-cover card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Hunter x Hunter</h5>
+                    <p class="card-text subtext">Жанры: Комедия, Экшен</p>
+                    <span class="badge bg-primary">Рейтинг: 9.6</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://roppongi.fr/wp-content/uploads/one-punch-man-1024x1024.jpg" style="height: 200px; overflow: hidden;" class="object-fit-cover card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">OnePunchMan</h5>
+                    <p class="card-text subtext">Жанры: Комедия, Экшен</p>
+                    <span class="badge bg-primary">Рейтинг: 9.1</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://printler.com/media/photo/141583.jpg" style="height: 200px; overflow: hidden;" class="object-fit-cover card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Chainsaw Man</h5>
+                    <p class="card-text subtext">Жанры: Ужасы, Экшен</p>
+                    <span class="badge bg-primary">Рейтинг: 8.2</span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+            
+            <!-- Боковая панель -->
+            <!-- Боковая панель: фильтры -->
+<div class="col-lg-4">
+    <div class="card p-3 shadow-sm">
+      <h4 class="mb-3">Фильтры</h4>
+      <form>
+        <div class="row">
+          <!-- Первая колонка фильтров -->
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="genre" class="form-label">Жанр</label>
+              <select id="genre" class="form-select">
+                <option>Все</option>
+                <option>Экшен</option>
+                <option>Фэнтези</option>
+                <option>Драма</option>
+                <option>Романтика</option>
+                <option>Комедия</option>
+                <option>Ужасы</option>
+                <option>Демоны</option>
+              </select>
+            </div>
+  
+            <div class="mb-3">
+              <label for="year" class="form-label">Год</label>
+              <select id="year" class="form-select">
+                <option>Все</option>
+                <option>2025-2020</option>
+                <option>2020-2018</option>
+                <option>2018-2016</option>
+                <option>2016-2010</option>
+                <option>2010-2000</option>
+                <option>До 200</option>
+              </select>
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Тип</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tv">
+                <label class="form-check-label" for="tv">TV сериал</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="ova">
+                <label class="form-check-label" for="ova">OVA</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="ona">
+                <label class="form-check-label" for="ova">ONA</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="film">
+                <label class="form-check-label" for="ova">Фильм</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="short">
+                <label class="form-check-label" for="ova">Короткометражка</label>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Вторая колонка фильтров -->
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="status" class="form-label">Статус</label>
+              <select id="status" class="form-select">
+                <option>Все</option>
+                <option>Вышло</option>
+                <option>Онгоинг</option>
+                <option>Анонс</option>
+              </select>
+            </div>
+  
+            <div class="mb-3">
+                <label class="form-label">Рейтинг</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" placeholder="От" min="0" max="10" step="0.1" name="rating_min">
+                  <span class="input-group-text">-</span>
+                  <input type="number" class="form-control" placeholder="До" min="0" max="10" step="0.1" name="rating_max">
+                </div>
+              </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Возраст</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="0+">
+                <label class="form-check-label" for="pg13">0+</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="6+">
+                <label class="form-check-label" for="r17">6+</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="12+">
+                <label class="form-check-label" for="r17">12+</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="16+">
+                <label class="form-check-label" for="r17">16+</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="18+">
+                <label class="form-check-label" for="r17">18+</label>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="col-12">
+            <div class="mb-3">
+              <label class="form-label">Количество эпизодов</label>
+              <div class="input-group">
+                <input type="number" class="form-control" placeholder="От" min="0" max="10" step="5" name="rating_min">
+                <span class="input-group-text">–</span>
+                <input type="number" class="form-control" placeholder="До" min="0" max="1000" step="5" name="rating_max">
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+  
+        <div class="d-grid mt-3">
+          <button type="submit" class="btn btn-primary">Применить фильтры</button>
+        </div>
+      </form>
+    </div>
+  </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <script>
+        const toggleBtn = document.getElementById('themeToggle');
+        const isDark = localStorage.getItem('theme') === 'dark';
+      
+        if (isDark) {
+          document.body.classList.add('dark-theme');
+          toggleBtn.textContent = '☀️';
+        }
+      
+        toggleBtn.addEventListener('click', () => {
+          document.body.classList.toggle('dark-theme');
+          const dark = document.body.classList.contains('dark-theme');
+          localStorage.setItem('theme', dark ? 'dark' : 'light');
+          toggleBtn.textContent = dark ? '☀️' : '🌙';
+        });
+      </script>
+
+
+</body>
+
+<footer class=" last-updates  mt-5 pt-4 pb-3 border-top d-block ">
+    <div class="container">
+        <div class="row">
+            <!-- О сайте -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-primary">О сайте</h5>
+                <p class="small mb-0">ASanctuary — лучший сайт для просмотра аниме онлайн в хорошем качестве.</p>
+            </div>
+
+            <!-- Контакты -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-primary">Контакты</h5>
+                <ul class="list-unstyled small">
+                    <li>
+                        <a href="mailto:ASanctuary@gmail.com" class="text-decoration-none foot-text ">
+                            <i class="bi bi-envelope me-2"></i>Email: ASanctuary@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none foot-text ">
+                            <i class="bi bi-telegram me-2"></i>Telegram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none foot-text ">
+                            <i class="bi bi-instagram me-2"></i>Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Быстрая навигация -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-primary">Быстрая навигация</h5>
+                <ul class="list-unstyled small">
+                    <li>
+                        <a href="#" class="text-decoration-none foot-text">
+                            <i class="bi bi-star-fill me-2 text-warning " ></i>Популярное аниме
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none foot-text ">
+                            <i class="bi bi-clock-history me-2 text-secondary "></i>Новые серии
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none  foot-text ">
+                            <i class="bi bi-shuffle me-2 text-info "></i>Случайное аниме
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center pt-3 border-top">
+            <p class="small mb-0">© 2025 <strong>ASanctuary</strong> — Все права защищены</p>
+        </div>
+    </div>
+</footer>
+
+
+</html>
